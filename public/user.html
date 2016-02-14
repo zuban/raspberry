@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700&subset=latin,cyrillic-ext,cyrillic'
+          rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css"
+          integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <style>
+        .jumbotron {
+            margin-top: 20px;
+        }
+
+        .circle-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-image: url("http://placekitten.com/g/200/400");
+            display: block;
+            background-position-y: 25%
+
+        }
+
+        body {
+            font-family: 'PT Serif', serif;
+        }
+
+        .date {
+            font-weight: 500;
+            margin-right: 13px;
+            position: relative;
+            top: -2px;
+            text-align: right;
+            margin-left: auto;
+            display: inline-block;
+            color: #fff;
+        }
+
+        .card-text {
+            font-size: 24px;
+            line-height: 26px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 4px;
+            margin-top: 4px;
+        }
+
+        .collections {
+            background-image: url(http://www.mysteriousgreece.com/wp-content/uploads/2014/10/appolloandthemuses-Raffaello.jpg);
+            background-repeat: no-repeat;
+            background-position: left top;
+        }
+
+        .card:hover {
+
+        }
+
+        .card {
+            border: 0
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-light bg-faded">
+        <a class="navbar-brand" href="#">Куратор</a>
+        <ul class="nav navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">О проекте</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Спектакли</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Театры</a>
+            </li>
+        </ul>
+        <form class="form-inline pull-xs-right">
+            <input class="form-control" type="text" placeholder="найдем все!">
+            <button class="btn btn-success-outline" type="submit">Поиск</button>
+            <button type="button" class="btn btn-success-outline" data-toggle="modal" data-target="#myModal">Войти
+            </button>
+
+        </form>
+    </nav>
+    <div class="container" style="padding-top: 60px;">
+        <h1 class="page-header">Edit Profile</h1>
+
+        <div class="row">
+            <!-- left column -->
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="text-center">
+                    <img src="http://lorempixel.com/200/200/people/9/" class="avatar img-circle img-thumbnail"
+                         alt="avatar">
+                </div>
+            </div>
+            <!-- edit form column -->
+            <div class="col-md-8 col-sm-6 col-xs-12 personal-info">
+                <div class="alert alert-info alert-dismissable">
+                    <a class="panel-close close" data-dismiss="alert">×</a>
+                    <i class="fa fa-coffee"></i>
+                    Добро пожаловать на сайт! Заполните информацию о себе.
+                </div>
+                <h3></h3>
+
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">Имя</label>
+
+                        <div class="col-lg-8">
+                            <input class="form-control" value="Jane" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">Фамилия</label>
+
+                        <div class="col-lg-8">
+                            <input class="form-control" value="Bishop" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">Company:</label>
+
+                        <div class="col-lg-8">
+                            <input class="form-control" value="" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">Email:</label>
+
+                        <div class="col-lg-8">
+                            <input class="form-control" value="janesemail@gmail.com" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">Time Zone:</label>
+
+                        <div class="col-lg-8">
+                            <div class="ui-select">
+                                <select id="user_time_zone" class="form-control">
+                                    <option value="Hawaii">(GMT-10:00) Hawaii</option>
+                                    <option value="Alaska">(GMT-09:00) Alaska</option>
+                                    <option value="Pacific Time (US &amp; Canada)">(GMT-08:00) Pacific Time (US &amp;
+                                        Canada)
+                                    </option>
+                                    <option value="Arizona">(GMT-07:00) Arizona</option>
+                                    <option value="Mountain Time (US &amp; Canada)">(GMT-07:00) Mountain Time (US &amp;
+                                        Canada)
+                                    </option>
+                                    <option value="Central Time (US &amp; Canada)" selected="selected">(GMT-06:00)
+                                        Central Time (US &amp; Canada)
+                                    </option>
+                                    <option value="Eastern Time (US &amp; Canada)">(GMT-05:00) Eastern Time (US &amp;
+                                        Canada)
+                                    </option>
+                                    <option value="Indiana (East)">(GMT-05:00) Indiana (East)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Username:</label>
+
+                        <div class="col-md-8">
+                            <input class="form-control" value="janeuser" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Password:</label>
+
+                        <div class="col-md-8">
+                            <input class="form-control" value="11111122333" type="password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">Confirm password:</label>
+
+                        <div class="col-md-8">
+                            <input class="form-control" value="11111122333" type="password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label"></label>
+
+                        <div class="col-md-8">
+                            <input class="btn btn-primary" value="Save Changes" type="button">
+                            <span></span>
+                            <input class="btn btn-default" value="Cancel" type="reset">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="app.js"></script>
+</body>
+</html>

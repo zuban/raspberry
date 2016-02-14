@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700&subset=latin,cyrillic-ext,cyrillic'
+          rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css"
+          integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <style>
+        .jumbotron {
+            margin-top: 20px;
+        }
+
+        .circle-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-image: url("http://placekitten.com/g/200/400");
+            display: block;
+            background-position-y: 25%
+
+        }
+
+        body {
+            font-family: 'PT Serif', serif;
+        }
+
+        .date {
+            font-weight: 500;
+            margin-right: 13px;
+            position: relative;
+            top: -2px;
+            text-align: right;
+            margin-left: auto;
+            display: inline-block;
+            color: #fff;
+        }
+
+        .card-text {
+            font-size: 24px;
+            line-height: 26px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 4px;
+            margin-top: 4px;
+        }
+
+        .collections {
+            background-image: url(http://www.mysteriousgreece.com/wp-content/uploads/2014/10/appolloandthemuses-Raffaello.jpg);
+            background-repeat: no-repeat;
+            background-position: left top;
+        }
+
+        .card:hover {
+
+        }
+
+        .card {
+            border: 0
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-light bg-faded">
+        <a class="navbar-brand" href="#">Куратор</a>
+        <ul class="nav navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">О проекте</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Спектакли</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Театры</a>
+            </li>
+        </ul>
+        <form class="form-inline pull-xs-right">
+            <input class="form-control" type="text" placeholder="найдем все!">
+            <button class="btn btn-success-outline" type="submit">Поиск</button>
+            <button type="button" class="btn btn-success-outline" data-toggle="modal" data-target="#myModal">Войти
+            </button>
+
+        </form>
+    </nav>
+    <div class="jumbotron">
+        <h1 class="display-3">Куратор</h1>
+
+        <p class="lead">Куратор - это всё, что нужно, чтобы насладиться театром</p>
+
+        <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
+    </div>
+    <div class="row row-offcanvas row-offcanvas-right">
+
+        <div class="col-xs-12 col-sm-9">
+            <div style="    box-shadow: 0 0 8px 0 rgba(0,0,0,.25);
+    margin-bottom: 32px;
+    border-radius: 4px;">
+                <div class="card collections" style="width: 100%; height: 400px; text-align: center;">
+
+                    <div class="card-block">
+                        <div class="date"><span>14 мая</span> <span>14:19</span></div>
+                        <h2 class="card-title"
+                            style="text-align: center; padding-top: 180px;  font-weight: 700; line-height: 34px; font-size: 32px; color: #fff;">
+                            Древняя греция</h2>
+                        <button type="button" class="btn btn-secondary btn-sm" style="margin: 0 auto; color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.19);
+    border-color: rgb(204, 204, 204);"> Подробнее
+                        </button>
+                    </div>
+                </div>
+                <div class="autor">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-3 block">
+                            <div class="circle-image" style="margin: 0 auto;"></div>
+                        </div>
+                        <div class="col-md-8">
+                            <h4 style="    padding-top: 8px;">Наташа Крамер</h4>
+
+                            <p style="    font-style: italic;
+    /* word-break: break-word; */
+    color: #a09b96;">студентка</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="description">
+                    <p style="
+                    font-size: 20px;
+                    line-height: 30px;
+                    margin: 0 0 30px;
+                        padding-left: 50px;
+    padding-right: 10px;
+    padding-top: 20px;
+        padding-bottom: 20px;">Живу в Ростове, но это касается многих городов. Бесит уродливая наружная реклама и убогие
+                        вывески. Меня колотит, когда я вижу, что дом 19го века испорчен отвратными желто-красными
+                        афишами, пластиковыми коробами, или, совсем ужас, если кусок дома покрашен ядовито-неприятным
+                        "фирменным" цветом. Впрочем, дело не только в домах, в принципе скопление кричащей рекламы от
+                        горе-дизайнеров вгоняет меня в тоску. Увидеть приятную глазу стильную вывеску это просто
+                        счастье.</p>
+                </div>
+            </div><!--/row-->
+        </div><!--/span-->
+
+
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+            <p class="lead">Подпишитесь на темы:</p>
+
+            <div class="card" style="background-color: #00b2d9;">
+                <!--<img class="card-img-top"  alt="Card image cap" >-->
+                <div class="card-block">
+                    <h3 class="card-text">Подписаться на обновления</h3>
+                    <!-- Secondary, outline button -->
+                    <button type="button" class="btn btn-secondary">Подписаться</button>
+                </div>
+            </div>
+        </div><!--/span-->
+    </div>
+
+    <!-- Content here -->
+    <!-- Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Войдите с помощью FB или VK</h4>
+                </div>
+                <div class="modal-body">
+                    <button type="button" class="btn btn-secondary">VK</button>
+                    <button type="button" class="btn btn-secondary">FB</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="app.js"></script>
+</body>
+</html>
